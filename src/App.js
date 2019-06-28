@@ -8,7 +8,7 @@ import TableRow from '@material-ui/core/TableRow';
 import Button from '@material-ui/core/Button';
 import './App.scss';
 
-const BASE_URL = "https://thedigitalgurl.api-us1.com/api/3/contacts/";
+const BASE_URL = "https://lamppoststudios.api-us1.com/api/3/contacts";
 const API_KEY = `${process.env.REACT_APP_CONTACTS_API_KEY}`;
 const CORS = `${'https://cors-anywhere.herokuapp.com/'}`;
 
@@ -32,7 +32,6 @@ class ContactList extends React.Component {
           this.setState({
             data: response.data.contacts
           });
-          console.log(response);
         } else {
           console.log('problem');
         }
