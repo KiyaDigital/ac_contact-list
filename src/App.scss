@@ -1,7 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap');
+/*--- Variables ---*/
+//colors
+$ocean : #356ae6;
+//fonts
+$primary-font:'IBM Plex Sans', sans-serif;
+
 
 #root {
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family:$primary-font;
   padding: 0;
   margin: 0;
   color: #1f2129;
@@ -15,7 +21,7 @@
 }
 
 .MuiTable-root {
-  max-width: 1920px;
+  max-width: 1440px;
   margin: auto;
   border: #E4E7F0 1px solid;
 }
@@ -28,7 +34,7 @@
 
     &.name,
     &.email {
-      color: #356ae6;
+      color: $ocean;
     }
 
     &.name {
@@ -57,21 +63,4 @@
 
 .MuiTableHead-root {
   height: 28px !important;
-}
-
-.table {
-  border: #E4E7F0 1px solid;
-  border-radius: 4px;
-  max-width: 650;
-
-  th {
-    color: #5f667e;
-    padding: 10px;
-    text-align: center;
-    border-bottom: #E4E7F0 1px solid;
-    font-size: 12px;
-    font-weight: 400;
-  }
-
-  td {}
 }
